@@ -1,5 +1,5 @@
 {
-    "name": "THALAPATHY-FILTER-BOT",
+    "name": "FilmClan",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
-    "repository": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
+    "website": "https://github.com/FilmClan/FilmClan",
+    "repository": "https://github.com/FilmClan/FilmClan",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",

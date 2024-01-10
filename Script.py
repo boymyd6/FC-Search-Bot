@@ -15,14 +15,43 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
  ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : v2.7.1 [sᴛᴀʙʟᴇ]></b>"""
 
     SOURCE_TXT = """
-<b>Hᴇʏ, Tʜɪs ɪs ᴀ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.
+<b>Premium membership Plans  👑🎁.
 
-Tʜɪs Bᴏᴛ ʜᴀs Lᴀᴛᴇsᴛ ᴀɴᴅ Aᴅᴠᴀɴᴄᴇᴅ Fᴇᴀᴛᴜʀᴇs⚡️
+➪ Silver Plan 🔘
 
-Where is source code? - <a href='https://t.me/FilmClan/3'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
+⇒ ғɪxᴇᴅ ᴘʀɪᴄᴇ : ₹40/-
+⇒ ᴠᴀʟɪᴅɪᴛʏ : 1 Month
+
+➪ Gold Plan 🟡
+
+⇒ ғɪxᴇᴅ ᴘʀɪᴄᴇ : ₹75/- 
+⇒ ᴠᴀʟɪᴅɪᴛʏ : 2 Month 
+
+➪ Platinum Plan 🧿
+
+⇒ ғɪxᴇᴅ ᴘʀɪᴄᴇ : ₹100/- 
+⇒ ᴠᴀʟɪᴅɪᴛʏ : 3 Months 
+
+➪ Diamond Plan 💎
+
+⇒ ғɪxᴇᴅ ᴘʀɪᴄᴇ : ₹150/- 
+⇒ ᴠᴀʟɪᴅɪᴛʏ : 6 Months  
+
+•────•────────•────•
+ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🏆
+
+📌 ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ
+📌 ᴅɪʀᴇᴄᴛ ғɪʟᴇs
+📌 ғᴀsᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴏᴘᴛɪᴏɴ
+📌 ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ᴏᴘᴛɪᴏɴ
+📌 ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs
+•────•────────•────•
 
 
-Developer - <a href='https://t.me/Maidi_King'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
+𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐇𝐄𝐑𝐄 👉 - <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a></b>
+
+
+𝗝𝗢𝗜𝗡 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 - <a href='https://t.me/FilmClan'>𝗙𝗜𝗟𝗠𝗖𝗟𝗔𝗡</a></b>"""
 
 
 

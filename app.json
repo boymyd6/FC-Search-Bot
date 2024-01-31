@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/FilmClan/FilmClan",
-    "repository": "https://github.com/FilmClan/FilmClan",
+    "website": "https://github.com/Maheshbox/FilmClan",
+    "repository": "https://github.com/Maheshbox/FilmClan",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",

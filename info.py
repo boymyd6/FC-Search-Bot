@@ -21,10 +21,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/82c123f99ea26068b2feb.jpg https://graph.org/file/708f862d22821d4245916.jpg https://graph.org/file/f44e4918d981a7729ebe6.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/howtodownloadmoviestamilhd/70")
-SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/b556851db8db18ee93e1c.jpg https://graph.org/file/fbd0f4cbae3c180217156.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", 0))
+MELCOW_VID = environ.get("MELCOW_VID", 0))
+SPELL_IMG = environ.get("SPELL_IMG", 0))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6302537270').split()]
@@ -56,7 +56,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/FilmClan')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/FilmClan_Group')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/FilmClan')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/FilmClan')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))

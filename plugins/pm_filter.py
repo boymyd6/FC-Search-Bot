@@ -1581,8 +1581,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Kannada", callback_data="kannada_info"),
             InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
         ], [
-            InlineKeyboardButton("Dᴜᴀʟ Aᴜᴅɪᴏ", callback_data="dual_info"),
-            InlineKeyboardButton("Mᴜʟᴛɪ Aᴜᴅɪᴏ", callback_data="multi_info"),
+            InlineKeyboardButton("Marathi", callback_data="Marathi_info"),
+            InlineKeyboardButton("Dual Audio", callback_data="dual_info"),
+            InlineKeyboardButton("Multi Audio", callback_data="multi_info"),
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
 
             ]]
@@ -1875,6 +1876,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 parse_mode=enums.ParseMode.HTML
             )
     elif query.data == "multi_info":
+            btn = [[
+                    InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Maidi_King")
+                  ]]
+        
+            await client.edit_message_media(
+                query.message.chat.id, 
+                query.message.id, 
+                InputMediaPhoto(random.choice(PICS))
+            )
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(script.GUJARATI_INFO),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+    elif query.data == "Marathi_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="telegram.me/Maidi_King")

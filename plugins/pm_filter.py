@@ -518,7 +518,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     search = FRESH.get(key)
     search = search.replace("_", " ")
     sea = ""
-    season_search = ["s01","s02","s03","s04","s05","s06","s07","s08","s09","s10","s010","season 01","season 02","season 03","season 04","season 05","season 06","season 07","season 08","season 09","season 10","season 010", "season 1","season 2","season 3","season 4","season 5","season 6","season 7","season 8","season 9","season 10","season 010","s011","s11","s012", "s013", "s014", "s015", "s016", "s017", "s018", "s019", "s20","s020", "season 011","season 012","season 013","season 014","season 015","season 016","season 017","season 018","season 019","season 20","season 020","season 11","season 12","season 13","season 14","season 15","season 16","season 17","season 18","season 19","season 020","season 20"]
+    season_search = ["S21","S20","S19","S18","S17","S16","S15","S14","S13","S12","S11","S10","S09","S08","S07","S06","S05","S04","S03","S02","S01","season 21","season 20","season 19","season 18","season 17","season 16","season 15","season 14","season 13","season 12","season 11","season 10","season 09","season 08","season 07","season 06","season 05","season 04","season 03","season 02","season 01"]
     for x in range (len(season_search)):
         if season_search[x] in search:
             sea = season_search[x]

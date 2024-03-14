@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /FilmClan
 fi
-cd /DQ-The-File-Donor
+cd /FilmClan
 pip3 install -U -r requirements.txt
 echo "Starting FilmClan...."
 python3 bot.py

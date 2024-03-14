@@ -7,7 +7,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/FilmClan>𒆜ꜰɪʟᴍᴄʟᴀɴ࿐</a>
  ‣ My best friend : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
- ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a> 
+ ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
  ‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
  ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -48,7 +48,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 •────•────────•────•
 
 
-𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐇𝐄𝐑𝐄 👉 - <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a></b>
+𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐇𝐄𝐑𝐄 👉 - <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a></b>
 
 
 𝗝𝗢𝗜𝗡 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 - <a href='https://t.me/FilmClan'>𝗙𝗜𝗟𝗠𝗖𝗟𝗔𝗡</a></b>"""
@@ -103,7 +103,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 my features Stay here new features coming soon...  
- <b>✯ Maintained by : <a href=https://t.me/Maidi_King>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a></b>
+ <b>✯ Maintained by : <a href=https://t.me/MYD_BOY>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a></b>
   
  <b>✯ Join here : <a href=https://t.me/FilmClan>☢Join my updateds☢</a></b> 
   
@@ -692,13 +692,13 @@ Also your tutorial will be Added Your Group..."""
     DEVELOPER_TXT = """
 special Thanks To ❤️ Developers -
 
--Dev 1 [Owner of this bot ]<a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a>
+-Dev 1 [Owner of this bot ]<a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
 
--Dev 2 <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a>
+-Dev 2 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
 
--Dev 3 <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ </> ᴷⁱⁿᵍ ࿐</a>
+-Dev 3 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
 
-- Dev 4 <a href='https://t.me/Maidi_King'>𒆜 ᴍᴀɪᴅɪ ᴷⁱⁿᵍ ࿐</a>
+- Dev 4 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
 """
 
 

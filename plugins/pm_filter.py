@@ -1626,10 +1626,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Telugu", callback_data="telugu_info"),
             InlineKeyboardButton("Kannada", callback_data="kannada_info"),
             InlineKeyboardButton("Gujarati", callback_data="gujarati_info"),
-        ], [
-            InlineKeyboardButton("Marathi", callback_data="Marathi_info"),
-            InlineKeyboardButton("Dual Audio", callback_data="dual_info"),
-            InlineKeyboardButton("Multi Audio", callback_data="multi_info"),
             InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start")
 
             ]]

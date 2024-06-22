@@ -1,7 +1,7 @@
-# Exported from Render on 2024-06-19T15:11:57Z
+# Exported from Render on 2024-06-22T12:58:55Z
 services:
 - type: web
-  name: AutoFilmBot-1
+  name: AutoFilmBot
   runtime: docker
   repo: https://github.com/MYDBOY/AutoFilmBot
   plan: free

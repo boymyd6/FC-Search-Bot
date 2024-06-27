@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "autofcbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlshortx.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '7bbbfec870fabf11b3ce6b45b391865d6f2eaca6')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))

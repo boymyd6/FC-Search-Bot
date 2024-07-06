@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/e924fe08d717bbfc4bcef.jpg" alt="FilmClan Logo">
+  <img src="[https://graph.org/file/e924fe08d717bbfc4bcef.jpg](https://graph.org/file/b3eb155afa7a1a3ca7834.jpg)" alt="FilmClan Logo">
 </p>
 <h1 align="center">
   FilmClan

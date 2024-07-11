@@ -370,7 +370,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     #     search = BUTTONS.get(key+"1")
     # else:
     #     search = BUTTONS.get(key)
-    #     BUTTONS[key+"1"] = search
+    #     BUTTONS[key+"4"] = search
     search = FRESH.get(key)
     search = search.replace(' ', '_')
     btn = []

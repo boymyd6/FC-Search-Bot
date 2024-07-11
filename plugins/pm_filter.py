@@ -366,11 +366,6 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     except:
         pass
     _, key = query.data.split("#")
-    # if BUTTONS.get(key+"1")!=None:
-    #     search = BUTTONS.get(key+"1")
-    # else:
-    #     search = BUTTONS.get(key)
-    #     BUTTONS[key+"4"] = search
     search = FRESH.get(key)
     search = search.replace(' ', '_')
     btn = []
@@ -383,9 +378,8 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(
                 text=EPISODES[i+1].title(),
                 callback_data=f"fl#{EPISODES[i+1].lower()}#{key}"
-                    )
-                )
-        btn.append(row)
+            ),
+        ])
 
     btn.insert(
         0,
@@ -397,7 +391,7 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     )
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ↭", callback_data=f"fe#homepage#{key}")])
+    btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ↭", callback_data=f"fl#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 

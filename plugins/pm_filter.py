@@ -1316,51 +1316,42 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
 
-    elif lazyData.startswith("generate_stream_link"):
-        _, file_id = lazyData.split(":")
+    elif query.data.startswith("generate_stream_link"):
+        _, file_id = query.data.split(":")
         try:
             user_id = query.from_user.id
-            username = query.from_user.mention 
+            username =  query.from_user.mention 
+
             log_msg = await client.send_cached_media(
                 chat_id=LOG_CHANNEL,
                 file_id=file_id,
             )
             fileName = {quote_plus(get_name(log_msg))}
-            lazy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-            lazy_download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-            hp_link = await get_shortlink(lazy_download)
-            ph_link = await get_shortlink(lazy_stream)
-            buttons = []
-            if await db.has_premium_access(user_id):                               
-                buttons = [[
-                    InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=download),
-                    InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=stream)
-                ]]
-            else:
-                await query.answer("🚸 ɴᴏᴛᴇ :\n👉.\n\nʜᴏʟʟʏᴡᴏᴏᴅ ʙᴏʟʟʏᴡᴏᴏᴅ ᴛᴏʟʟʏᴡᴏᴏᴅ sᴏᴜᴛʜ ɪɴᴅɪᴀɴ ғɪʟᴍs ᴅᴜʙʙᴇᴅ ɪɴ ʜɪɴᴅɪ, ᴇɴɢʟɪsʜ, ᴛᴀᴍɪʟ, ᴛᴇʟᴜɢᴜ, ᴍᴀʟᴀʏᴀʟᴀᴍ, ᴋᴀɴɴᴀᴅᴀ | ғɪʟᴍᴄʟᴀɴ ᴏғғɪᴄɪᴀʟ.", show_alert=True)
-                await query.message.reply_text(
-                text="<b>🙏\n\nsʜᴀʀᴇ & sᴜᴘᴘᴏʀᴛ  🙏</b>",
-                quote=True,
-                disable_web_page_preview=True,                  
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", callback_data='seeplans')]]))
-                buttons = [[
-                    InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=hp_link),
-                    InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=ph_link)
-                ]]
-    
-            query.message.reply_markup = query.message.reply_markup or []
-            query.message.reply_markup.inline_keyboard.pop(0)
-            query.message.reply_markup.inline_keyboard.insert(0, buttons)
-            await query.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
+            stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            ph_link = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+            hp_link = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+
             await log_msg.reply_text(
-                    text=f"#LinkGenrated\n\nIᴅ : <code>{user_id}</code>\nUꜱᴇʀɴᴀᴍᴇ : {username}\n\nNᴀᴍᴇ : {fileName}",
-                    quote=True,
-                    disable_web_page_preview=True,
-                    reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=hp_link),
-                                                        InlineKeyboardButton('ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', url=ph_link)]]))  
+                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
+                quote=True,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
+            )
+            button = [[
+                InlineKeyboardButton("🚀 Fast Download 🚀", url=hp_link),
+                InlineKeyboardButton('🖥️ Watch online 🖥️', url=ph_link)
+            ]]
+            await query.message.reply_text(
+                text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
+                quote=True,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(button)
+            )
         except Exception as e:
             print(e)  # print the error message
-            await query.answer(f"⚠️ SOMETHING WENT WRONG \n\n{e}", show_alert=True)
+            await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
             return
     # don't change anything without contacting me @creatorrio
 

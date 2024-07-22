@@ -1335,8 +1335,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [[
                     InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=lazy_download),
                     InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=lazy_stream)
-                ],[
-                    InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url='https://t.me/FilmClan')
                 ]]
             else:
                 await query.answer("🚸 ɴᴏᴛᴇ :\n👉.\n\nʜᴏʟʟʏᴡᴏᴏᴅ ʙᴏʟʟʏᴡᴏᴏᴅ ᴛᴏʟʟʏᴡᴏᴏᴅ sᴏᴜᴛʜ ɪɴᴅɪᴀɴ ғɪʟᴍs ᴅᴜʙʙᴇᴅ ɪɴ ʜɪɴᴅɪ, ᴇɴɢʟɪsʜ, ᴛᴀᴍɪʟ, ᴛᴇʟᴜɢᴜ, ᴍᴀʟᴀʏᴀʟᴀᴍ, ᴋᴀɴɴᴀᴅᴀ | ғɪʟᴍᴄʟᴀɴ ᴏғғɪᴄɪᴀʟ.", show_alert=True)
@@ -1348,8 +1346,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [[
                     InlineKeyboardButton("🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ", url=hp_link),
                     InlineKeyboardButton("ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿", url=ph_link)
-                ],[
-                    InlineKeyboardButton('❗ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ❗', url='https://t.me/FilmClan')
                 ]]
     
             query.message.reply_markup = query.message.reply_markup or []

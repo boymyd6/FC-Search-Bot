@@ -1,11 +1,11 @@
 services:
   # A Docker web service
   - type: web
-    name: AutoFilmBot
+    name: FC-Search-Bot
     env: python
     startCommand: python3 bot.py
     buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/MYDBOY/AutoFilmBot # optional
+    repo: https://github.com/FILMCLAN/FC-Search-Bot # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: main # optional (defaults to master)

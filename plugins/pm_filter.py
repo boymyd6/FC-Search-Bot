@@ -368,16 +368,16 @@ async def episodes_cb_handler(client: Client, query: CallbackQuery):
     search = search.replace(' ', '_')
     btn = []
     for i in range(0, len(EPISODES)-1, 4):
-        btn.append([
-            InlineKeyboardButton(
-                text=EPISODES[i].title(),
-                callback_data=f"fl#{EPISODES[i].lower()}#{key}"
-            ),
-            InlineKeyboardButton(
-                text=EPISODES[i+1].title(),
-                callback_data=f"fl#{EPISODES[i+1].lower()}#{key}"
-            ),
-        ])
+        row = []
+        for l in range(4):
+            if i+l < len(EPISODES):
+                row.append(
+                    InlineKeyboardButton(
+                        text=EPISODES[i+l].title(),
+                        callback_data=f"fl#{EPISODES[i+l].lower()}#{key}"
+                    )
+                )
+        btn.append(row)
 
     btn.insert(
         0,

@@ -47,6 +47,13 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mydclan:zxLzRCGREXwH16
 DATABASE_NAME = environ.get('DATABASE_NAME', "mydclan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
+
+# If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://autofcbot:kebu2Ltt2056oEpJ@cluster0.h8xulit.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://jarramahesh24:VLAsRFbaFT8WFbJn@cluster0.gleasay.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "")   # This Db is for File Data Store When First Db Is Going To Be Full.
+
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
